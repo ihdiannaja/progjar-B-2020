@@ -23,10 +23,10 @@ Tugas 4
 
 
 -sebelum dijalankan
-![image](https://user-images.githubusercontent.com/37465687/77454557-43e5bc80-6e2b-11ea-804d-73a914467d54.png)
+<br>![image](https://user-images.githubusercontent.com/37465687/77454557-43e5bc80-6e2b-11ea-804d-73a914467d54.png)
 
 -setelah dijalankan
-![image](https://user-images.githubusercontent.com/37465687/77454637-62e44e80-6e2b-11ea-9e7e-62525d1171b8.png)
+<br>![image](https://user-images.githubusercontent.com/37465687/77454637-62e44e80-6e2b-11ea-9e7e-62525d1171b8.png)
 
 
 3. Melihat List file

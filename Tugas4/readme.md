@@ -23,7 +23,7 @@ Tugas 4
 
 
 -sebelum dijalankan
-<br>![image](https://user-images.githubusercontent.com/37465687/77454557-43e5bc80-6e2b-11ea-804d-73a914467d54.png)
+<br>![image](https://user-images.githubusercontent.com/37465687/77455317-41d02d80-6e2c-11ea-97c1-b211d1788a96.png)
 
 -setelah dijalankan
 <br>![image](https://user-images.githubusercontent.com/37465687/77454637-62e44e80-6e2b-11ea-9e7e-62525d1171b8.png)

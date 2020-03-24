@@ -9,10 +9,10 @@ Tugas 4
 ![image](https://user-images.githubusercontent.com/37465687/77454316-f0736e80-6e2a-11ea-98a7-2b71df95ed81.png)
 
 -Sebelum dijalankan
-![image](https://user-images.githubusercontent.com/37465687/77454256-ddf93500-6e2a-11ea-8fd8-876ad28b87e2.png)
+<br> ![image](https://user-images.githubusercontent.com/37465687/77454256-ddf93500-6e2a-11ea-8fd8-876ad28b87e2.png)
 
 -Sesudah dijalankan
-![image](https://user-images.githubusercontent.com/37465687/77454363-fff2b780-6e2a-11ea-8a38-fce5a5348371.png)
+<br> ![image](https://user-images.githubusercontent.com/37465687/77454363-fff2b780-6e2a-11ea-8a38-fce5a5348371.png)
 
 2. Mengambil File
 -Menjalankan server

@@ -10,14 +10,20 @@ class Chat:
     def __init__(self):
         self.sessions = {}
         self.users = {}
-        self.users['naja'] = {'nama': 'Naja', 'Kota': 'Pekalongan', 'password': 'pkl', 'incoming': {},
+        self.users['messi'] = {'nama': 'Lionel Messi', 'negara': 'Argentina', 'password': 'surabaya', 'incoming': {},
                                'outgoing': {}}
-        self.users['arini'] = {'nama': 'Arini', 'Kota': 'Bojonegoro', 'password': 'bjn', 'incoming': {},
-                               'outgoing': {}}
-        self.users['awin'] = {'nama': 'Awin', 'Kota': 'Solo', 'password': 'slo',
+        self.users['henderson'] = {'nama': 'Jordan Henderson', 'negara': 'Inggris', 'password': 'surabaya',
                                    'incoming': {}, 'outgoing': {}}
-        self.users['yuki'] = {'nama': 'Yuki', 'Kota': 'Bojonegoro', 'password': 'bjn', 'incoming': {},
+        self.users['lineker'] = {'nama': 'Gary Lineker', 'negara': 'Inggris', 'password': 'surabaya', 'incoming': {},
                                  'outgoing': {}}
+        self.users['naja'] = {'nama': 'Naja', 'negara': 'Indonesia', 'password': 'pkl', 'incoming': {},
+                               'outgoing': {}}
+        self.users['arini'] = {'nama': 'Arini', 'negara': 'IDN', 'password': 'bjn', 'incoming': {},
+                               'outgoing': {}}
+        self.users['awin'] = {'nama': 'Awin', 'negara': 'IDN', 'password': 'slo',
+                              'incoming': {}, 'outgoing': {}}
+        self.users['yuki'] = {'nama': 'Yuki', 'negara': 'IDN', 'password': 'bjn', 'incoming': {},
+                              'outgoing': {}}
 
     def proses(self, data):
         j = data.split(" ")
@@ -54,11 +60,11 @@ class Chat:
                 return self.logout(sessionid)
 
             else:
-                return {'status': 'ERROR', 'message': '**Protocol Tidak Benar'}
+                return {'status': 'ERROR', 'message': '**Protocol Salah'}
         except KeyError:
             return {'status': 'ERROR', 'message': 'Informasi tidak ditemukan'}
         except IndexError:
-            return {'status': 'ERROR', 'message': '--Protocol Tidak Benar'}
+            return {'status': 'ERROR', 'message': '--Protocol Salah'}
 
     def autentikasi_user(self, username, password):
         if (username not in self.users):
@@ -118,7 +124,7 @@ class Chat:
 
     def logout(self, sessionid):
         del self.sessions[sessionid]
-        return {'status': 'OK', 'messages': "logout success"}
+        return {'status': 'OK', 'messages': "logout berhasil!"}
 
 
 if __name__ == "__main__":
@@ -128,13 +134,16 @@ if __name__ == "__main__":
     # sesi = j.autentikasi_user('messi','surabaya')
     # print sesi
     tokenid = sesi['tokenid']
+    print(j.proses("chat {} messi hai mess ".format(tokenid)))
+    print(j.proses("chat {} henderson hai hen ".format(tokenid)))
+    print(j.proses("chat {} lineker hai lin ".format(tokenid)))
     print(j.proses("chat {} arini hai rin ".format(tokenid)))
-    print(j.proses("chat {} awin hai win ".format(tokenid)))
-    print(j.proses("chat {} yuki hai yuk ".format(tokenid)))
 
-    print("isi mailbox dari awin")
-    print(j.get_inbox('awin'))
+    print("isi mailbox dari messi")
+    print(j.get_inbox('messi'))
+    print("isi mailbox dari henderson")
+    print(j.get_inbox('henderson'))
+    print("isi mailbox dari lineker")
+    print(j.get_inbox('lineker'))
     print("isi mailbox dari arini")
     print(j.get_inbox('arini'))
-    print("isi mailbox dari yuki")
-    print(j.get_inbox('yuki'))
